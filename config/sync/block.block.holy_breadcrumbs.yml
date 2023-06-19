@@ -1,0 +1,22 @@
+uuid: 68f0e1c5-bb9a-4d31-a32e-1de6fa5f800d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - holy
+_core:
+  default_config_hash: 0JotCCfHUNKoEXPxNH_XtyQ6x9IfnVFM5hcB8cJXJY8
+id: holy_breadcrumbs
+theme: holy
+region: content
+weight: -6
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: ''
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: 308537c3-65f6-41f3-9c84-c3a8d2901059
+langcode: en
+status: true
+dependencies: {  }
+id: date_and_sallary
+label: 'Date and Sallary'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,24 @@
+uuid: 3f243630-b95e-4ed3-a7ca-c66bd83b631a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_leave_
+    - paragraphs.paragraphs_type.leave_
+  module:
+    - datetime
+id: paragraph.leave_.field_leave_
+field_name: field_leave_
+entity_type: paragraph
+bundle: leave_
+label: 'Leave Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

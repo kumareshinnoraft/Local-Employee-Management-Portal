@@ -1,0 +1,24 @@
+uuid: d15f997f-3c07-4962-8972-caa8b6d2d468
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sallary_date
+    - paragraphs.paragraphs_type.date_and_sallary
+  module:
+    - datetime
+id: paragraph.date_and_sallary.field_sallary_date
+field_name: field_sallary_date
+entity_type: paragraph
+bundle: date_and_sallary
+label: 'Sallary Date'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

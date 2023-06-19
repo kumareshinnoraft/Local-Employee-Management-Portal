@@ -1,0 +1,39 @@
+uuid: dd6d5395-546b-48df-8065-c302c966210d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sallary.field_sallary
+    - field.field.node.sallary.field_select_employee
+    - node.type.sallary
+  module:
+    - entity_reference_revisions
+    - user
+id: node.sallary.default
+targetEntityType: node
+bundle: sallary
+mode: default
+content:
+  field_sallary:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_select_employee:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

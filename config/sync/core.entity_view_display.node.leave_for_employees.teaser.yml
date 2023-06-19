@@ -1,0 +1,24 @@
+uuid: a93be3db-35d2-42a9-84af-ad257c411375
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.leave_for_employees.field_leave
+    - field.field.node.leave_for_employees.field_select_employee_for_leave
+    - node.type.leave_for_employees
+  module:
+    - user
+id: node.leave_for_employees.teaser
+targetEntityType: node
+bundle: leave_for_employees
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_leave: true
+  field_select_employee_for_leave: true

@@ -1,0 +1,88 @@
+uuid: 5513afd5-f901-4625-8639-9e04eb548a20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.date_and_sallary.field_sallary
+    - field.field.paragraph.date_and_sallary.field_sallary_date
+    - paragraphs.paragraphs_type.date_and_sallary
+  module:
+    - datetime
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          e9b90a1f-df2a-49ba-a392-81dd4fc706e5:
+            uuid: e9b90a1f-df2a-49ba-a392-81dd4fc706e5
+            region: first
+            configuration:
+              id: 'field_block:paragraph:date_and_sallary:field_sallary_date'
+              label: 'Sallary Date'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          cbc5d3f0-dcb7-48fc-9b23-ea0384f1a0fe:
+            uuid: cbc5d3f0-dcb7-48fc-9b23-ea0384f1a0fe
+            region: second
+            configuration:
+              id: 'field_block:paragraph:date_and_sallary:field_sallary'
+              label: Sallary
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: paragraph.date_and_sallary.default
+targetEntityType: paragraph
+bundle: date_and_sallary
+mode: default
+content:
+  field_sallary:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sallary_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

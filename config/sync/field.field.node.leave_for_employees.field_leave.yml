@@ -1,0 +1,34 @@
+uuid: 182d0f06-691e-41eb-8700-2e80bf795817
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_leave
+    - node.type.leave_for_employees
+    - paragraphs.paragraphs_type.leave_
+  module:
+    - entity_reference_revisions
+id: node.leave_for_employees.field_leave
+field_name: field_leave
+entity_type: node
+bundle: leave_for_employees
+label: Leave
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      leave_: leave_
+    negate: 0
+    target_bundles_drag_drop:
+      date_and_sallary:
+        weight: 3
+        enabled: false
+      leave_:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

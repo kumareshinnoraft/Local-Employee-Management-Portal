@@ -1,0 +1,23 @@
+uuid: 1bfef10a-2ead-44c3-8d1f-2455fc9c88d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sallary
+    - paragraphs.paragraphs_type.date_and_sallary
+id: paragraph.date_and_sallary.field_sallary
+field_name: field_sallary
+entity_type: paragraph
+bundle: date_and_sallary
+label: Sallary
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

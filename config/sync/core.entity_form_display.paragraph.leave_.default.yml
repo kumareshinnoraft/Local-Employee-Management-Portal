@@ -1,0 +1,34 @@
+uuid: db834bd4-bdf7-4c1e-9149-3b88aaa17d8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.leave_.field_leave_
+    - field.field.paragraph.leave_.field_leave_type
+    - paragraphs.paragraphs_type.leave_
+  module:
+    - datetime
+id: paragraph.leave_.default
+targetEntityType: paragraph
+bundle: leave_
+mode: default
+content:
+  field_leave_:
+    type: datetime_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_leave_type:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

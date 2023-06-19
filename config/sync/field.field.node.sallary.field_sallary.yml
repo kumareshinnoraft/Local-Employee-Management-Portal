@@ -1,0 +1,31 @@
+uuid: 0ee86aa5-80f5-4716-8143-89c6b827e893
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sallary
+    - node.type.sallary
+    - paragraphs.paragraphs_type.date_and_sallary
+  module:
+    - entity_reference_revisions
+id: node.sallary.field_sallary
+field_name: field_sallary
+entity_type: node
+bundle: sallary
+label: Sallary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      date_and_sallary: date_and_sallary
+    negate: 0
+    target_bundles_drag_drop:
+      date_and_sallary:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

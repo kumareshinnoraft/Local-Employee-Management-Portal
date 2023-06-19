@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: df0d9184-c2b3-488f-b8ce-9bd00fac9a34
+name: 'Local Employee Management Portal'
+mail: baksikumaresh@gmail.com
+slogan: ''
+page:
+  403: /node/8
+  404: /node/7
+  front: /welcome
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
