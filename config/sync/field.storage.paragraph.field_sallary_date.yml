@@ -1,0 +1,20 @@
+uuid: 6b1bc055-c0d7-4a22-b09a-26d7953bb4ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - paragraphs
+id: paragraph.field_sallary_date
+field_name: field_sallary_date
+entity_type: paragraph
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

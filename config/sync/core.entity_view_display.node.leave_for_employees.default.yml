@@ -1,0 +1,39 @@
+uuid: c176eb98-0c20-4b27-907c-412fc6d6a07c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.leave_for_employees.field_leave
+    - field.field.node.leave_for_employees.field_select_employee_for_leave
+    - node.type.leave_for_employees
+  module:
+    - entity_reference_revisions
+    - user
+id: node.leave_for_employees.default
+targetEntityType: node
+bundle: leave_for_employees
+mode: default
+content:
+  field_leave:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_select_employee_for_leave:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

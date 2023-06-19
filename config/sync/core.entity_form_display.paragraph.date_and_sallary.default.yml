@@ -1,0 +1,31 @@
+uuid: 3c9915e9-9e48-4a71-be53-fce4dae5d29b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.date_and_sallary.field_sallary
+    - field.field.paragraph.date_and_sallary.field_sallary_date
+    - paragraphs.paragraphs_type.date_and_sallary
+  module:
+    - datetime
+id: paragraph.date_and_sallary.default
+targetEntityType: paragraph
+bundle: date_and_sallary
+mode: default
+content:
+  field_sallary:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_sallary_date:
+    type: datetime_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

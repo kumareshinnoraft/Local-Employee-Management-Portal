@@ -1,0 +1,24 @@
+uuid: 7071a96d-598f-4392-b092-4bdadd6a62c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sallary.field_sallary
+    - field.field.node.sallary.field_select_employee
+    - node.type.sallary
+  module:
+    - user
+id: node.sallary.teaser
+targetEntityType: node
+bundle: sallary
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_sallary: true
+  field_select_employee: true

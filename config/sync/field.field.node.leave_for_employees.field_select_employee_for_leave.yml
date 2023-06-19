@@ -1,0 +1,34 @@
+uuid: c5e8b4cd-78f1-454c-a630-0d7c84dfeb3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_select_employee_for_leave
+    - node.type.leave_for_employees
+id: node.leave_for_employees.field_select_employee_for_leave
+field_name: field_select_employee_for_leave
+entity_type: node
+bundle: leave_for_employees
+label: 'Select Employee'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: role
+      role:
+        employee: employee
+        hr: hr
+        content_editor: '0'
+        administrator: '0'
+    include_anonymous: true
+field_type: entity_reference

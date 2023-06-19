@@ -1,0 +1,10 @@
+uuid: c0927af2-e791-4a48-8b84-9c18a62c1f10
+langcode: en
+status: true
+dependencies: {  }
+id: leave_
+label: 'Leave '
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

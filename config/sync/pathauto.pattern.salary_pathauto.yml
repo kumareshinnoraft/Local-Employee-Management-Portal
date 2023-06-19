@@ -1,0 +1,22 @@
+uuid: 8dc7eed8-ff7a-482c-9467-32e096ed2bf1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: salary_pathauto
+label: 'Salary Pathauto'
+type: 'canonical_entities:node'
+pattern: '/salary/[node:field_select_employee:entity:name]'
+selection_criteria:
+  f6f9ff23-0420-4718-ba85-6e4ba19918ba:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: f6f9ff23-0420-4718-ba85-6e4ba19918ba
+    context_mapping:
+      node: node
+    bundles:
+      sallary: sallary
+selection_logic: and
+weight: -5
+relationships: {  }

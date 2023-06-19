@@ -1,0 +1,14 @@
+uuid: 0f600e2d-3535-4183-9ee9-3e8193237f9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user_name_pathauto
+label: 'User Name Pathauto'
+type: 'canonical_entities:user'
+pattern: '[user:name]'
+selection_criteria: {  }
+selection_logic: and
+weight: 0
+relationships: {  }

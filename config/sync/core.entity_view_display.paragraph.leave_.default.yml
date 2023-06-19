@@ -1,0 +1,33 @@
+uuid: a3cedca6-b92d-4ba2-b68f-e1a3a4855f4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.leave_.field_leave_
+    - field.field.paragraph.leave_.field_leave_type
+    - paragraphs.paragraphs_type.leave_
+  module:
+    - datetime
+id: paragraph.leave_.default
+targetEntityType: paragraph
+bundle: leave_
+mode: default
+content:
+  field_leave_:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_leave_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

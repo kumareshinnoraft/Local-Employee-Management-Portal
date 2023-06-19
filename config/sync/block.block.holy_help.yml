@@ -1,0 +1,22 @@
+uuid: cb60c30c-3979-41a0-ab1c-836abb20355e
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - holy
+_core:
+  default_config_hash: ysqnJBYIHCv-OxF6mBYS-_2v3ugF0FEm9-j-rRqtT6Y
+id: holy_help
+theme: holy
+region: help
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: ''
+  label_display: '0'
+  provider: help
+visibility: {  }
